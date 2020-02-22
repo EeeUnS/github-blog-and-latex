@@ -1,0 +1,305 @@
+총 주어진 시간 40분 
+발표 예정시간 30분
+template 완성 배포
+
+작성 환경 
+vscode 
+jekyll + mathjax 
+
+
+
+
+jekyll
+
+
+https://github.com/jekyll/minima
+
+
+대상
+ 
+blog로 수식을 쓰고싶은 사람
+latex내용보다는 blog에 대한 내용이 주가 될것.
+내용을 광범위하게 다룹니다.
+
+
+section
+
+1. blog 탐색
+
+2. tex plugin
+
+3. githup blog 세팅하기
+
+
+1. blog
+
+직접 개설 vs tistory/네이버 블로그
+
+영구적으로 보관용이
+극한의 커스텀 가능
+
+단
+시작하기 너무 어려움
+유지비
+
+
+
+유지비x
+시작하기 편함
+관리가 편함
+
+비교적 자유도가 떨어짐.
+언젠가 없어진다면?
+
+아 tex 하고싶다.
+
+
+1. 네이버 블로그 : 자체 지원 수식 편집기 사용
+
+2.tistory, blogspot : 수식을 지원해줄 js 삽입가능
+
+삽입.
+
+
+
+static web page generate
+
+mkdocs
+python
+
+jekyll
+ruby
+
+
+github page
+1. 무료
+2. 내부는 jekyll로 돌아감.
+3. 도메인 추가가능
+
+
+
+복잡하다. 
+
+github 블로그를 만들려면 ruby를 깔고.. jekyll 설치하고..
+쉘에 명령어를.. 그다음 git clone...
+
+이게 진짜 내가 원하는 것이 맞는가 한번 만들어보는데
+노력이 많이듬.
+
+
+
+jekyll vs mkdocs
+
+jekyll 
+github blog로 이용시 가장 간편함
+ruby 설치.
+
+
+
+2. 텍을 블로그에서 써보자
+
+
+수식을 지원하는 블로그를 쓰자 (네이버 블로그)
+여백 0로 만들고 pdf를 이미지로 변환후 업로드
+이미지로 렌더링후 이미지를 업로드.
+http://latex2png.com
+
+
+2 - 2 tex plugin
+
+
+katex vs mathjax
+
+tistory  mathjax쓰는법
+
+html 편집
+
+mathjax 
+
+
+tistory & 
+blogspot(google blog) 공통: 
+
+
+mathjax 
+
+</head> 부분에 다음코드를 삽입한다.
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+katex
+~~~~
+
+헤더 설정에서 한번만 바꾸면됨
+
+
+naver blog에서 쓰는법.
+~~~~
+
+
+
+
+
+using javascript library
+
+mathjax  : for using MathML, and AsciiMath
+
+
+
+
+katex vs mathjax
+
+rendering 속도
+katex 
+
+기능, 확장성 mathjax
+
+14년 글 
+https://math.meta.stackexchange.com/questions/16809/a-mathjax-alternative-from-khan-academy
+
+17년 글
+https://physics.meta.stackexchange.com/questions/10152/katex-instead-of-mathjax
+
+19년 글
+https://meta.stackexchange.com/questions/338933/next-math-renderer-mathjax-v3-versus-katex
+
+
+
+
+
+
+수행 속도 차이.
+https://www.intmath.com/cg5/katex-mathjax-comparison.php
+
+
+결론 : 쓰고싶은거 씁시다.
+
+
+
+
+katex cammands  : 
+https://katex.org/docs/supported.html
+
+mathjax cammands  : 
+http://docs.mathjax.org/en/latest/input/tex/macros/
+
+
+
+
+
+//////////////////////////////////////////////////////////////
+
+github blog + 지킬 + katex 
+
+
+요구사항 
+github 계정
+github desktop(git사용가능)
+(ruby 설치)
+
+
+https://github.com/linjer/jekyll-katex
+
+
+
+
+
+
+
+https://sujinlee.me/pandoc-thesis/
+
+
+
+
+가장쉬운방법
+
+자신이 괜찮다 생각하는 블로그 베끼기 license가 있을시 확인
+github에서 zip채로 긁어서 원하는 포스트 부분만 직접할것.
+
+
+
+
+3. katex로 markdown 작성시 도움되는 vscode플러그인
+
+vscode 에 markdown+math(or markdown math)라는 katex렌더링 결과를 보여주는 확장기능이 존재
+
+online editor 또한 존재.
+
+https://upmath.me
+
+
+pandoc
+
+markdown to tex
+tex to markdown
+
+mathexchange
+
+katex vs mathjax
+
+
+
+
+need 
+
+네이버블로그에
+katex 
+mathjax 쓴 결과물 보여주기
+
+E[X]=\sum _{i=1}^{n-1}\sum _{j=i+1}^n\frac{2}{j-i+1}\\ =\sum _{i=1}^{n-1}\sum _{k=1}^{n-i}\frac{2}{k+1}\\ \le \sum _{i=1}^{n-1}\sum _{k=1}^n\frac{2}{k}\\ \le \sum _{i=1}^{n-1}c\lg n\\ \le cn\lg n
+
+
+
+
+https://github.com/mathjax/MathJax/issues/2220
+
+http://docs.mathjax.org/en/latest/upgrading/v2.html#changes-in-the-mathjax-api
+
+https://11011110.github.io/blog/2019/10/17/mathjax-3-jekyll.html
+
+
+
+
+
+blog 소개 - tex plugin -  
+수식 쓰기
+naver smart editor
+
+pdf for ebook -> image
+
+tex plugin 
+mathjax vs katex
+
+blog + tex 
+
+
+-> 
+jekyll + github + mathjax
+
+github 
+& github desktop
+
+
+-> pandoc
+
+etc 
+단점
+mkdocs
+
+
+베껴쓰기
+
+
+
+
+만들어서 배포할것
+
+ebook용 파일.
+
+mathjax , code 세팅된 jekyll 템플릿
+
+
+
