@@ -4,6 +4,7 @@
 
 - jekyll minima + mathjax template : [링크](https://github.com/EeeUnS/jekylltest)
 
+- include파일 안의 mathjax_support.html파일 : [링크](https://github.com/EeeUnS/jekylltest/blob/master/_includes/mathjax_support.html)
 
 추가로 볼만한것 algorithgm 페이지 setting : mkdocs + katex : [링크](https://github.com/EeeUnS/Introduction-To-Algorithms-Cpp-code)
 
